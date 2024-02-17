@@ -1,1 +1,1 @@
-# celestia-collector
+# Celestia Collector
