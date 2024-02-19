@@ -13,12 +13,12 @@ select chain in "mainnet" "mocha" "arabica"; do
             break
             ;;
         mocha)
-            endpoint="https://otel.mocha.observer"
+            endpoint="https://otel.mocha.celestia.observer"
             echo "Chain: $chain"
             break
             ;;
         arabica)
-            endpoint="https://otel.arabica.observer"
+            endpoint="https://otel.arabica.celestia.observer"
             echo "Chain: $chain"
             break
             ;;
@@ -55,7 +55,7 @@ sudo tee <<EOF >/dev/null /etc/otelcol-contrib/config.yaml
 receivers:
   otlp:
     protocols:
-      grpc: 
+      grpc:
       http:
   prometheus:
     config:
@@ -110,7 +110,7 @@ cat <<EOF | sudo tee /etc/telegraf/telegraf.conf
 
 [[outputs.influxdb_v2]]
   urls = ["https://celestia-metrics.f5nodes.com"]
-  token = "x-MJSrFAd3I7I3X2TWu9RAxw4TQYCRY7ArNrI3mGYar7nKU4ENp8DtJi1pqXCDcpYU2whBtlUenLesBw1rQKpQ=="
+  token = "pVvfHDmas18fRHOVu-q86cuPMO_XcqhFUlaThSMNGM0Mr9E2AVvsYjTXJddELXs3WaYcDMzpfowGwce-Vh7V7Q=="
   organization = "celestia-community"
   bucket = "celestia-community-metrics"
 EOF
