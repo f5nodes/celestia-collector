@@ -37,7 +37,7 @@ To view your metrics see [Monitoring](https://github.com/f5nodes/celestia-collec
 
 ## Monitoring
 
-Access Grafana Dashboard — [celestia.f5nodes.com](celestia.f5nodes.com)
+Access Grafana Dashboard — [celestia.f5nodes.com](https://celestia.f5nodes.com)
 
 
 ![screenshot](https://github.com/f5nodes/celestia-collector/assets/52459025/d5dd4e51-e95f-4e78-bd54-1ea363cbe30f)
