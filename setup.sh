@@ -105,6 +105,23 @@ cat <<EOF | sudo tee /etc/telegraf/telegraf.conf
   flush_interval = "15s"
   round_interval = true
 
+[[inputs.cpu]]
+    percpu = true
+    totalcpu = true
+    collect_cpu_time = false
+    report_active = false
+[[inputs.disk]]
+    ignore_fs = ["devtmpfs", "devfs"]
+[[inputs.io]]
+[[inputs.mem]]
+[[inputs.net]]
+[[inputs.system]]
+[[inputs.swap]]
+[[inputs.netstat]]
+[[inputs.processes]]
+[[inputs.kernel]]
+[[inputs.diskio]]
+
 [[inputs.prometheus]]
   urls = ["http://localhost:8889/metrics"]
 
