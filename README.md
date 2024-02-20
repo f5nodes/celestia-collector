@@ -32,7 +32,7 @@ After installation, your node metrics will be forwarded to the configured endpoi
 - Mainnet – `https://otel.celestia.observer`
 - Mocha testnet – `soon`
 
-To view your metrics see [Monitoring](https://github.com/f5nodes/celestia-collector#monitoring).
+To view your metrics see [Monitoring](#monitoring).
 
 ## Architecture
 ![diagram](https://github.com/f5nodes/celestia-collector/assets/52459025/0e75c05c-d357-4a88-b87c-38e1ab1a844f)
