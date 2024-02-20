@@ -1,10 +1,8 @@
 # Celestia Collector — Monitoring Tool
 
-## Overview
-
 Celestia Collector is an open-source monitoring tool designed to enhance the performance tracking of Celestia data availability nodes.
 
-Typically, node operators face challenges in monitoring their Celestia node's performance due to [limitations](https://github.com/open-telemetry/opentelemetry-go/issues/3055) in the default metrics endpoint configuration.
+Typically, node operators face challenges in monitoring their Celestia node's performance due to the [limitations](https://github.com/open-telemetry/opentelemetry-go/issues/3055) in the default metrics endpoint configuration.
 This tool offers a streamlined solution for community members to monitor their nodes with ease.
 
 ## Features
@@ -37,3 +35,10 @@ To view your metrics see [Monitoring](https://github.com/f5nodes/celestia-collec
 ## Monitoring
 
 Access Grafana Dashboard
+
+
+## TBD
+- [x] Visualize Celestia metrics in Grafana
+- [x] Visualize server metrics in Grafana
+- [ ] Add additional Celestia metrics visualization to Grafana
+- [ ] Add more server metrics visualization to Grafana
