@@ -17,6 +17,8 @@ This tool offers a streamlined solution for community members to monitor their n
 
 > [!NOTE]
 > This guidance assumes you have already [set up](https://github.com/f5nodes/celestia) your node.
+>
+> You can use [f5nodes/celestia](https://github.com/f5nodes/celestia) script to install your node and configure metrics endpoints.
 
 1. Edit your node startup script to send metrics to localhost:
 ```bash
