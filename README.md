@@ -6,6 +6,7 @@ Typically, node operators face challenges in monitoring their Celestia node's pe
 This tool offers a streamlined solution for community members to monitor their nodes with ease.
 
 ## Features
+- Data Availability Nodes support.
 - Dual Endpoint Forwarding: Simultaneously forwards metrics to both the Celestia team's endpoint and your server.
 - Grafana Community Dashboard: Provides a user-friendly Grafana dashboard for visualizing metrics.
 - Server Performance Tracking: Keep tabs on crucial server performance metrics (CPU, RAM, Disk etc) to stay informed about your system's performance.
@@ -32,6 +33,7 @@ After installation, your node metrics will be forwarded to the configured endpoi
 To view your metrics see [Monitoring](https://github.com/f5nodes/celestia-collector?tab=readme-ov-file#monitoring).
 
 ## Architecture
+![diagram](https://github.com/f5nodes/celestia-collector/assets/52459025/0e75c05c-d357-4a88-b87c-38e1ab1a844f)
 
 ## Monitoring
 
