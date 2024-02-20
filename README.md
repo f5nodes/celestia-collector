@@ -8,6 +8,7 @@ This tool offers a streamlined solution for community members to monitor their n
 ## Features
 - Dual Endpoint Forwarding: Simultaneously forwards metrics to both the Celestia team's endpoint and your server.
 - Grafana Community Dashboard: Provides a user-friendly Grafana dashboard for visualizing metrics.
+- Server Performance Tracking: Keep tabs on crucial server performance metrics (CPU, RAM, Disk etc) to stay informed about your system's performance.
 - Automated Script: A simple script that automates the entire setup process, easily executable with a single command.
 - Simple Setup with no performance impact to your node.
 
