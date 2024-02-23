@@ -88,8 +88,8 @@ service:
       exporters: [otlphttp, prometheus]
 EOF
 
-systemctl daemon-reload
-systemctl restart otelcol-contrib
+sudo systemctl daemon-reload
+sudo systemctl restart otelcol-contrib
 
 # Install Telegraf
 
@@ -112,9 +112,7 @@ cat <<EOF | sudo tee /etc/telegraf/telegraf.conf
     report_active = false
 [[inputs.disk]]
     ignore_fs = ["devtmpfs", "devfs"]
-[[inputs.io]]
 [[inputs.mem]]
-[[inputs.net]]
 [[inputs.system]]
 [[inputs.swap]]
 [[inputs.netstat]]
@@ -127,9 +125,12 @@ cat <<EOF | sudo tee /etc/telegraf/telegraf.conf
 
 [[outputs.influxdb_v2]]
   urls = ["https://celestia-metrics.f5nodes.com"]
-  token = "pVvfHDmas18fRHOVu-q86cuPMO_XcqhFUlaThSMNGM0Mr9E2AVvsYjTXJddELXs3WaYcDMzpfowGwce-Vh7V7Q=="
+  token = "TUM74_V-GQACI_LtmCIZ_mNwX1OXk8uMWCT5R0r5CUepsZNb2Qbefaf45G2Me1XRcHGZ5Pr9NhPMQ80LZx2Gow=="
   organization = "celestia-community"
   bucket = "celestia-community-metrics"
 EOF
 
 sudo systemctl start telegraf
+
+echo -e "\nCelestia Collector Monitoring Tool succesfully installed and running"
+echo -e "To view your metrics visit celestia.f5nodes.com\n"
