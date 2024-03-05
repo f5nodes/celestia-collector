@@ -13,7 +13,7 @@ select chain in "mainnet" "mocha" "arabica"; do
             break
             ;;
         mocha)
-            endpoint="https://otel.mocha.celestia.observer"
+            endpoint="https://otel.celestia-mocha.com"
             echo "Chain: $chain"
             break
             ;;
