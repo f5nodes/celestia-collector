@@ -29,8 +29,8 @@ This tool offers a streamlined solution for community members to monitor their n
 . <(wget -qO- sh.f5nodes.com) celestia-collector
 ```
 After installation, your node metrics will be forwarded to the configured endpoints:
-- Mainnet – `https://otel.celestia.observer`
-- Mocha testnet – `soon`
+- Mainnet – `otel.celestia.observer`
+- Mocha testnet – `otel.celestia-mocha.com`
 
 To view your metrics see [Monitoring](#monitoring).
 
