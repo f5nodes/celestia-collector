@@ -30,7 +30,7 @@ This tool offers a streamlined solution for community members to monitor their n
 ```
 After installation, your node metrics will be forwarded to the configured endpoints:
 - Mainnet – `otel.celestia.observer`
-- Mocha testnet – `otel.celestia-mocha.com`
+- Mocha testnet – `otel.mocha.celestia.observer`
 
 To view your metrics see [Monitoring](#monitoring).
 
